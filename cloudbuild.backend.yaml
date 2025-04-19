@@ -32,7 +32,7 @@ steps:
       [
         "run",
         "deploy",
-        "be",
+        "tugas6-backend-179",
         "--image",
         "gcr.io/$PROJECT_ID/tugas6-backend-179",
         "--timeout",
