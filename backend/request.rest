@@ -1,0 +1,27 @@
+GET http://localhost:5000/catatan
+
+###
+GET http://localhost:5000/catatan/7
+
+###
+POST http://localhost:5000/add-catatan
+Content-Type: application/json
+
+{
+    "Judul": "catatan pertama",
+    "Isi": "hari ini aku membuat catatan",
+    "Tanggal": "21-09-2021"
+}
+
+###
+PUT http://localhost:5000/edit-catatan/7
+Content-Type: application/json
+
+{
+    "Judul": "resep obat",
+    "Isi": "campur obat ini dengan air hangat",
+    "Tanggal": "21-09-2022"
+}
+
+###
+DELETE http://localhost:5000/delete-catatan/8
