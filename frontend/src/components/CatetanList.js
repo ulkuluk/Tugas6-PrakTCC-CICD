@@ -28,7 +28,7 @@ const CatatanList = () => {
   return (
     <div className="columns mt-5 is-centered">
         <div className="column is-half">
-            <Link to={`add`} className='button is-success'>Tambah Catatannss</Link>
+            <Link to={`/add`} className='button is-success'>Tambah Catatan</Link>
         <table className='table is-striped is-fullwidth'>
             <thead>
                 <tr>
@@ -47,7 +47,7 @@ const CatatanList = () => {
                         <td>{catatan.Isi}</td>
                         <td>{catatan.Tanggal}</td>
                         <td>
-                            <td><Link to={`edit/${catatan.id}`}className='button is-small is-info'>Detail</Link></td>
+                            <td><Link to={`/edit/${catatan.id}`}className='button is-small is-info'>Detail</Link></td>
                             <td><button onClick={() => deleteCatatan(catatan.id)} className='button is-small is-danger'>delete</button></td>
                         </td>
                     </tr>

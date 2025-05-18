@@ -1,16 +1,27 @@
-GET http://localhost:5000/catatan
+GET http://localhost:5000/users
+
 
 ###
 GET http://localhost:5000/catatan/7
 
 ###
-POST http://localhost:5000/add-catatan
+POST http://localhost:5000/register
 Content-Type: application/json
 
 {
-    "Judul": "catatan pertama",
-    "Isi": "hari ini aku membuat catatan",
-    "Tanggal": "21-09-2021"
+    "name": "hari",
+    "email": "hari@suke",
+    "gender": "L",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "hari@suke",
+    "password": "123456"
 }
 
 ###

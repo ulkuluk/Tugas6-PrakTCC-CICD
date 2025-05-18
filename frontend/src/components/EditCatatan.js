@@ -22,7 +22,7 @@ const updateCatatan = async(e) => {
         Isi,
         Tanggal,
         });
-        navigate('/');
+        navigate('/dashboard');
     }catch (error) {
         console.log(error);
     }
