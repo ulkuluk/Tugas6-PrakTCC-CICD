@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:3000", "https://c-03-450907.uc.r.appspot.com"],
+    origin: ["http://localhost:3000","https://tugas7-frontend-dot-c-03-450907.uc.r.appspot.com/"],
   })
 );
 app.get("/", (req, res) => res.render("index"));
