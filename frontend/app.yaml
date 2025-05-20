@@ -1,2 +1,3 @@
 runtime: nodejs20
-service: tugas7-frontend
+service: default
+
